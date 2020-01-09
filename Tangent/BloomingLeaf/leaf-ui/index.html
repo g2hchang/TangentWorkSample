@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+
+        <title>BloomingLeaf</title>
+
+        <link rel="stylesheet" type="text/css" href="./rappid/dist/joint.ui.stencil.css" />
+        <link rel="stylesheet" type="text/css" href="./rappid/dist/joint.ui.halo.css" />
+        <link rel="stylesheet" type="text/css" href="./rappid/dist/joint.ui.selectionView.css" />
+        <link rel="stylesheet" type="text/css" href="./rappid/dist/joint.ui.paperScroller.css" />
+
+        <link rel="stylesheet" type="text/css" href="./rappid/dist/rappid.min.css" />
+        <link rel="stylesheet" type="text/css" href="./plugins/slider/nouislider.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/analysis_style.css" />
+
+    </head>
+    <body>
+        <p id="name">BloomingLeaf</p>
+        <div class="toolbar">
+            <div id="model-toolbar">
+                <button id="btn-undo" class="btn">Undo</button>
+                <button id="btn-redo" class="btn">Redo</button>
+                <div class="dropdown">
+                  <button id="btn-clear" class="btn">Clear</button>
+                  <!-- <div class="btn">Font Size</div> -->
+                  <div class="dropdown-toolbar">
+                    <a id="btn-clear-all">Full Model</a>
+                    <a id="btn-clear-elabel">Evaluation Labels</a>
+                    <a id="btn-clear-flabel">Dynamic Function Labels</a>
+                    <a id="btn-clear-cycle">Cycle Highlighting</a>
+                  </div>
+                </div>
+                <button id="btn-save" class="btn">Save</button>
+                <button id="btn-load" class="btn">Load</button>
+            </div>
+
+            <button id="btn-zoom-in" class="btn">Zoom In</button>
+            <button id="btn-zoom-out" class="btn">Zoom Out</button>
+            <button id="btn-svg" class="btn">Open as SVG</button>
+            <input type="file" id="loader" style="display:none">
+
+            <button id="btn-save-leaf" class="btn"> Export .leaf </button>
+<!--             <button id="btn-view-assignment" class="btn"> Export .leaf </button> -->
+
+            <div class="dropdown">
+              <div class="btn">Font Size</div>
+              <div class="dropdown-toolbar">
+                <a id="btn-fnt">Default</a>
+                <a id="btn-fnt-up">Increase</a>
+                <a id="btn-fnt-down">Decrease</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="btn">Help</div>
+              <div class="dropdown-toolbar">
+                <a onclick="window.open('documentation.pdf'); return false;">Documentation</a>
+                <a onclick="window.open('legend.html', 'newwindow', 'width=300, height=250'); return false;">
+                Legend</a>
+              </div>
+            </div>
+
+
+            <div id="dropdown-model" class="dropdown">
+                <button id="modeling-btn" class="red-btn btn">Model</button>
+                <div class="dropdown-toolbar">
+                    <a id="model-cur-btn">From Initial State</a>
+                </div>
+            </div>
+
+            <!-- OLD Button to switch between Constraint view and the Relationship view.
+			The functionality for the Constraint view still exists in the code.
+		      <button id="symbolic-btn" class="blue-btn btn">Model Constraints</button>-->
+            <button id="analysis-btn" class="green-btn btn" style="border-radius:none;">Analysis</button>
+            <button id="cycledetect-btn" class="pink-btn btn">Detect Cycles</button>
+
+        </div>
+
+        <div id="stencil" class="left-panel"><label>Stencil</label></div>
+        <div id="history" class="left-panel"><label>History Log</label></div>
+
+        <div id="paper">
+        </div>
+        <div class="inspector">
+            <div id="layout"></div>
+        </div>
+
+        <span id="modeText">Modelling View</span>
+
+        <div id="slider"></div>
+        <span id="sliderValue"></span>
+
+		<input id="elementList" type="hidden"/>
+
+
+        <script type="text/javascript">
+            SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformToElement || function(toElement) {
+            return toElement.getScreenCTM().inverse().multiply(this.getScreenCTM());
+        };
+        </script>
+
+        <script src="./rappid/lib/jquery/jquery.min.js"></script>
+        <script src="./rappid/lib/lodash/lodash.min.js"></script>
+        <script src="./rappid/lib/backbone/backbone-min.js"></script>
+
+        <script src="./rappid/dist/rappid.min.js"></script>
+
+        <script src="./rappid/dist/joint.ui.halo.js"></script>
+        <script src="./rappid/dist/joint.ui.clipboard.js"></script>
+        <script src="./rappid/dist/joint.ui.stencil.js"></script>
+        <script src="./rappid/dist/joint.ui.paperScroller.js"></script>
+        <script src="./rappid/dist/joint.ui.selectionView.js"></script>
+        <script src="./rappid/dist/joint.format.svg.js"></script>
+        <script src="./rappid/dist/joint.dia.command.js"></script>
+
+        <script src="./plugins/keyboard/keyboard.js"></script>
+        <script src="./plugins/slider/nouislider.min.js"></script>
+        <!-- <script src="./plugins/chart/Chart.min.js"></script> -->
+        <script src="./plugins/chart/Chart.bundle.min.js"></script>
+
+        <script src="./scripts/objects.js"></script>
+
+        <script src="./rappid-extensions/ElementInspector.js"></script>
+        <script src="./rappid-extensions/LinkInspector.js"></script>
+        <script src="./rappid-extensions/ConstraintsInspector.js"></script>
+        <script src="./rappid-extensions/AnalysisInspector.js"></script>
+        <script src="./rappid-extensions/joint.extensions.js"></script>
+
+        <script src="./scripts/main.js"></script>
+
+        <!--SweetAlertJS is used for easy way to customize dialog or alert message
+       -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.5/sweetalert2.all.js"></script>
+
+		<script src="./js/backendComm.js"></script>
+
+		<!-- OBJECTS to be sent to backend communication -->
+		<script src="./js/object/InputAnalysis.js"></script>
+		<script src="./js/object/InputModel.js"></script>
+		<!-- Model elements -->
+		<script src="./js/object/InputActor.js"></script>
+		<script src="./js/object/InputConstraint.js"></script>
+		<script src="./js/object/InputDynamic.js"></script>
+		<script src="./js/object/InputIntention.js"></script>
+		<script src="./js/object/InputLink.js"></script>
+    <script src="./js/object/InputEvaluation.js"></script>
+        <div class = "attribution">
+            <img src=http://upload.wikimedia.org/wikipedia/en/0/04/Utoronto_coa.svg style="width:25%;height:25%;float:left">
+            <br>
+            Release 1.0 - Beta <br>
+            Copyright 2015-2017.<br>University of Toronto<br>
+            Department of Computer Science. <br>
+            All rights reserved.<br>
+            <br>
+            Powered by: <br>
+            <br>
+            <img src="./jointjs.png" style="width:25%;height:25%;float:left">
+            Copyright 2014-2017.<br>client IO. All rights reserved.<br>
+    		JointJS: an HTML 5 diagramming component.<br>
+    		<a href=http://jointjs.com target="_blank">http://jointjs.com</a>
+        </div>
+    </body>
+</html>

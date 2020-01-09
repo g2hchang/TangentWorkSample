@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-26.7277" y1="618.268" x2="-26.7277" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+		<stop  offset="0" style="stop-color:#006DF0"/>
+		<stop  offset="1" style="stop-color:#00E7F0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_1_);" d="M368.147,416h-104v16h104v8c0,13.255-10.745,24-24,24h-208c-13.255,0-24-10.745-24-24v-8h104
+		v-16h-104v-80h-16v104c0.026,22.08,17.92,39.974,40,40h208c22.08-0.026,39.974-17.92,40-40V296h-16V416z"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-26.7277" y1="618.268" x2="-26.7277" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+		<stop  offset="0" style="stop-color:#006DF0"/>
+		<stop  offset="1" style="stop-color:#00E7F0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_2_);" d="M112.147,64h256v120h16V40c-0.026-22.08-17.92-39.974-40-40h-208
+		c-22.08,0.026-39.974,17.92-40,40v103.936h16V64z M136.147,16h208c13.255,0,24,10.745,24,24v8h-256v-8
+		C112.147,26.745,122.892,16,136.147,16z"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-26.7277" y1="618.268" x2="-26.7277" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+		<stop  offset="0" style="stop-color:#006DF0"/>
+		<stop  offset="1" style="stop-color:#00E7F0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_3_);" d="M232.147,416h16v16h-16V416z"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-26.7277" y1="618.268" x2="-26.7277" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+		<stop  offset="0" style="stop-color:#006DF0"/>
+		<stop  offset="1" style="stop-color:#00E7F0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_4_);" d="M232.147,24h16v16h-16V24z"/>
+	
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-26.7461" y1="618.268" x2="-26.7461" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+		<stop  offset="0" style="stop-color:#006DF0"/>
+		<stop  offset="1" style="stop-color:#00E7F0"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_5_);" d="M193.619,192c-26.51-40.735-81.022-52.266-121.756-25.756S19.597,247.266,46.107,288
+		s81.022,52.266,121.756,25.756c10.288-6.695,19.061-15.469,25.756-25.756h254.528v-96H193.619z M48.147,240
+		c-0.028-39.738,32.163-71.975,71.901-72.003c25.758-0.018,49.561,13.734,62.411,36.059c12.949,22.259,12.928,49.761-0.056,72
+		c-1.826,3.15-3.896,6.151-6.192,8.976c-0.138-0.25-0.296-0.488-0.472-0.712l-28.848-28.856c12.168-18.407,7.11-43.192-11.296-55.36
+		s-43.192-7.11-55.36,11.296s-7.11,43.192,11.296,55.36c13.352,8.826,30.682,8.832,44.04,0.016l28.856,28.856
+		c0.231,0.17,0.472,0.328,0.72,0.472c-30.903,24.919-76.155,20.068-101.075-10.834C53.735,272.45,48.113,256.469,48.147,240
+		L48.147,240z M96.547,250.344c-9.372-9.373-9.371-24.569,0.003-33.941c9.373-9.372,24.569-9.37,33.941,0.003
+		c9.371,9.372,9.371,24.566,0,33.938C121.109,259.696,105.929,259.696,96.547,250.344z M432.147,272H202.115
+		c1.085-2.804,2.027-5.661,2.824-8.56c0.176-0.664,0.304-1.328,0.472-1.992c0.688-2.725,1.24-5.488,1.656-8.288
+		c0.144-0.928,0.288-1.856,0.4-2.8c0.907-6.874,0.907-13.838,0-20.712c-0.112-0.952-0.256-1.888-0.4-2.832
+		c-0.416-2.752-0.949-5.469-1.6-8.152c-0.176-0.712-0.312-1.432-0.504-2.136c-0.803-2.889-1.754-5.736-2.848-8.528h230.032V272z"/>
+</g>
+<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-27.7277" y1="618.268" x2="-27.7277" y2="554.925" gradientTransform="matrix(8 0 0 -8 453.9688 4941)">
+	<stop  offset="0" style="stop-color:#006DF0"/>
+	<stop  offset="1" style="stop-color:#00E7F0"/>
+</linearGradient>
+<path style="fill:url(#SVGID_6_);" d="M224.147,216h16v48h-16V216z"/>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

@@ -1,0 +1,27 @@
+# Remove anything below the rappid folder.
+leaf-ui/rappid/*.*
+leaf-ui/rappid/*/*
+leaf-ui/rappid/*
+!leaf-ui/rappid/README-MISSING-RAPPID.md
+
+leaf-ui/cgi-bin/temp/*.out
+leaf-ui/cgi-bin/temp/output.*
+leaf-analysis/doc/*
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Apple OSX Files #
+.DS_Store
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+leaf-analysis/temp/output.out

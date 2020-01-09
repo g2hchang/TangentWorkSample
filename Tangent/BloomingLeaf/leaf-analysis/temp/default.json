@@ -1,0 +1,99 @@
+{
+  "analysis": {
+    "action": "singlePath",
+    "maxAbsTime": "100",
+    "conflictLevel": "S",
+    "numRelTime": "1",
+    "absTimePts": "2 4",
+    "currentState": "0",
+    "initialAssignedEpoch": [
+      "0"
+    ],
+    "initialValueTimePoints": [
+      "0"
+    ],
+    "elementList": [
+      {
+        "id": "0000",
+        "status": [
+          "0011"
+        ]
+      },
+      {
+        "id": "0001",
+        "status": [
+          "0011"
+        ]
+      },
+      {
+        "id": "0002",
+        "status": [
+          "0000"
+        ]
+      }
+    ]
+  },
+  "model": {
+    "actors": [
+      
+    ],
+    "intentions": [
+      {
+        "nodeActorID": "-",
+        "nodeID": "0000",
+        "nodeType": "G",
+        "nodeName": "Goal_0"
+      },
+      {
+        "nodeActorID": "-",
+        "nodeID": "0001",
+        "nodeType": "G",
+        "nodeName": "Goal_1"
+      },
+      {
+        "nodeActorID": "-",
+        "nodeID": "0002",
+        "nodeType": "G",
+        "nodeName": "Goal_2"
+      }
+    ],
+    "links": [
+      
+    ],
+    "dynamics": [
+      {
+        "intentionID": "0000",
+        "dynamicType": "C",
+        "markedValue": "0011",
+        "line": null
+      },
+      {
+        "intentionID": "0001",
+        "dynamicType": "R",
+        "markedValue": "0000",
+        "line": null
+      },
+      {
+        "intentionID": "0002",
+        "dynamicType": "NT",
+        "markedValue": "0000",
+        "line": null
+      }
+    ],
+    "constraints": [
+      
+    ],
+    "userEvaluations": [
+      {
+        "goal": "0002",
+        "absTime": 2,
+        "evaluationValue": "0011"
+      },
+      {
+        "goal": "0002",
+        "absTime": 4,
+        "evaluationValue": "1100"
+      }
+    ]
+  }
+}

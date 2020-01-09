@@ -1,0 +1,36 @@
+{
+  "name": "beamv2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.10",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.2",
+    "react-awesome-modal": "^2.0.4",
+    "react-dom": "^16.4.2",
+    "react-light-accordion": "^0.1.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-slick": "^0.23.1",
+    "react-svg": "^5.0.16",
+    "rodal": "^1.6.3",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.2",
+    "serve": "^8.2.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2-react": "^0.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
+  },
+  "proxy": "http://localhost:5000/"
+}
